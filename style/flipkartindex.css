@@ -1,0 +1,477 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #E5E4E2;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  padding: 10px 20px; /* Padding around the header */
+  background-color: white; /* Background color of the header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Logo Styles */
+.header-log img {
+  height: 40px;
+  margin-right: 20px; /* Adjust logo height */
+}
+
+/* Search Bar Styles */
+.search-bar {
+  flex-grow: 0.3; 
+  margin: 10px 10px; /* Margin on the sides */
+}
+
+.search-bar input {
+  width: 700px; /* Full width */
+  padding: 10px 10px 10px 40px;
+  font-size: 14px;
+  border: 1px solid #CEE5F6;
+  border-radius: 4px;
+  outline: none;
+  background: #CEE5F6 url('../images/icons/searchicon.png') no-repeat left 10px center;
+  background-size: 25px 25px;
+  color: black;
+  font-size: 18px;
+}
+
+/* Profile, Cart, and Seller Styles */
+.flipkart-profile,
+.flipkart-cart,
+.flipkart-seller {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  margin-left:50px; /* Space between items */
+}
+
+.flipkart-profile img,
+.flipkart-cart img,
+.flipkart-seller img {
+  width: 25px; /* Icon size */
+  height: 25px; /* Icon size */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.profile-text,
+.cart-text,
+.seller-text {
+  font-weight: 200;
+  font-size: 18px; /* Font size for text */
+  color: #333; /* Text color */
+}
+
+/* Menu Icon Styles */
+.flipkart-menu {
+  margin-left: 30px; /* Space before the menu icon */
+}
+
+.flipkart-menu img {
+  width: 30px; /* Menu icon size */
+  height: 30px; /* Menu icon size */
+  cursor: pointer; 
+  
+    background-image: none; 
+  }
+
+
+/* Hover Effects */
+.flipkart-profile:hover img,
+.flipkart-cart:hover img,
+.flipkart-seller:hover img,
+.flipkart-menu:hover img {
+  opacity: 0.8; /* Slightly dim the icon on hover */
+}
+
+
+
+.flipkart-profile:hover {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 1px;
+  background-color: #D3D3D3;
+  cursor:pointer
+}
+.flipkart-seller,.flipkart-cart:hover,.flipkart-menu:hover{
+  cursor: pointer;
+}
+.lower-nag {
+  padding-top: 10px;
+  margin-top: 8px;
+  width: 1500px; 
+  height: 110px; 
+  display: flex;
+  background-color: white;
+  gap: 60px; 
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.Grocey-cart,
+.mobile-cart,
+.application-cart,
+.flipght-cart,
+.vehcile-cart,
+.electric-cart  {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  user-select: none
+  
+}
+
+
+
+.Grocey-cart{
+  margin-left: 170px;
+}
+.Grocey-cart img,
+.mobile-cart img,
+.application-cart img,
+.flipght-cart img,
+.vehcile-cart img
+{
+  width: 80px; 
+  height: 70px;
+}
+.mobile-cart,
+.application-cart,
+.vehcile-cart,
+.flipght-cart,
+.electric-cart
+{
+  margin-left: 60px;
+}
+
+.Grocey-cart :hover,
+.mobile-cart:hover,
+.application-cart :hover,
+.flipght-cart :hover, 
+.vehcile-cart :hover,
+.electric-cart :hover
+{
+cursor: pointer;
+}
+.electric-cart img
+{
+  padding-top: 13px;
+  padding-bottom: 10px;
+width:71px;
+height: 70px;
+}
+
+.middle-cart {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  width: 1500;
+  position: relative; 
+  overflow: hidden; 
+ 
+}
+
+.slider-image {
+  display: flex;
+  transition: transform 0.5s ease; 
+}
+
+.slide {
+  min-width: 100%; 
+  transition: opacity 0.5s ease; 
+}
+
+.btn-container {
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  z-index: 10; 
+}
+
+.btn-container:first-child {
+  left:0px; 
+}
+
+.btn-container:last-child {
+  right: 0px; 
+}
+
+.btn {
+  padding: 30px 15px;
+  background-color: white;
+  /* color: rgb(73, 73, 73); */
+  color: gray;
+  font-size: 25px;
+  border: none; 
+  border-radius: 4px;
+  cursor:pointer;
+ 
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #f0f0f0; 
+  
+}
+.slider-image:hover{
+  cursor: pointer;
+}
+
+.heading-middle {
+  margin-top: 10px;
+  padding-top: 2px;
+  margin-left: 15px;
+  width:1200px; 
+  height: 50px;
+  text-align: left; 
+  font-size: 14px; 
+  color: #333; 
+  background-color: white;
+  font-weight: 300;
+  user-select: none
+}
+.text-head
+{
+  margin-left: 15px;
+}
+
+/* Main Container Styles */
+
+.uper-things
+{
+  width: 1500px;
+  height: 300px;
+  display: flex;
+}
+.scoller {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  width: 1277px;
+  height: 300px;
+  margin-left: 15px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.scoller svg {
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+  cursor: pointer;
+  color: white;
+  border-radius: 50%;
+}
+
+.scoller ul {
+  display: flex;
+  gap: 16px;
+  padding: 12px 24px;
+  list-style: none;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  
+}
+
+.scoller ul::-webkit-scrollbar {
+  display: none;
+}
+
+.scoller a {
+  color:black;
+  text-decoration: none;
+  background-color: white;
+  padding: 4px 24px;
+  display: inline-block;
+  border-radius: 4px;
+  user-select: none;
+  white-space: nowrap;
+}
+
+
+.scoller .left-arrow,
+.scoller .right-arrow {
+  position: absolute;
+  height: 100%;
+  width: 50px;
+  top: 0;
+  color: black;
+  display: none;
+  align-items: center;
+
+}
+
+.scoller .right-arrow.active,
+.scoller .left-arrow.active {
+  display: flex;
+}
+
+.scoller .right-arrow {
+  right: 0;
+  background: white;
+  color: black;
+  justify-content: flex-end;
+}
+
+.scoller .left-arrow {
+  left: 0;
+ color: black;
+ 
+  justify-content: flex-start;
+}
+.left-arrow,
+.right-arrow
+{
+  color: black;
+}
+.scoller svg:hover {
+  background: gray;
+}
+
+.scoller a .div-class
+{
+  width: 200px;
+  height: 200px;
+  margin-left: 10px;
+}
+.scoller a .div-class img{
+  width: 150px;
+  height: 150px;
+
+}
+.scoller a .div-class:hover{
+  transform: scale(1.1);
+}
+
+.image-rightside
+{
+  display: flex;
+  width: 300px;
+  height: 300px; 
+  justify-content: right;
+  background-color: white;
+  border-left: 6px solid #E5E4E2;
+  
+}
+.image-rightside img{
+  max-width:  300px;
+ max-height: 300px;
+ object-fit: cover;  
+  
+}
+
+
+.next-upper-text
+{
+  width: 1500px;
+  height: 50px;
+  background-color: white;
+  margin-top: 10px;
+  padding-top: 2px;
+  margin-left: 15px;
+  user-select: none
+}
+.next-upperline
+{
+  margin-left: 10px;
+}
+
+.next-upper-nav
+{
+  width: 1500px;
+  height: 300px;
+  display: flex;
+}
+
+.mange-scoll
+{
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  width: 1500px;
+  height: 400px;
+  margin-left: 15px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.mange-scoll ul{
+  display: flex;
+  gap: 16px;
+  padding: 12px 12px;
+  list-style: none;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+ scrollbar-width: none;
+ scroll-behavior: smooth;
+
+}
+.mange-scoll ul::-webkit-scrollbar
+{
+  display: none;
+}
+.mange-scoll a{
+  color:black;
+  text-decoration: none;
+  background-color: white;
+  padding: 4px 24px;
+  display: inline-block;
+  border-radius: 4px;
+  user-select: none;
+  white-space: nowrap;
+}
+.mange-scoll .left-arrows img,
+.mange-scoll .right-arrows img{
+  width: 30px;
+  height: 30px;
+}
+
+.mange-scoll .left-arrows,
+.mange-scoll .right-arrows {
+  position: absolute;
+  height: 100px; /* Decreased height */
+  width: 35px; /* Decreased width */
+  top: 50%; /* Start from the middle */
+  color: black;
+  display: none; /* Keep this if you want to hide them initially */
+  align-items: center;
+  align-content: center;
+  justify-content: center; /* Center content horizontally */
+}
+
+.mange-scoll .right-arrows {
+  right: 0; /* Position it to the right */
+  transform: translateY(-50%); /* Center it vertically */
+}
+
+.mange-scoll .left-arrows {
+  left: 0; /* Position it to the left */
+  transform: translateY(-50%); /* Center it vertically */
+}
+
+
+.mange-scoll .right-arrows.actives,
+.mange-scoll .left-arrows.actives{
+  display: flex;
+}
+
+.mange-scoll a .lower-classs
+{
+  width: 400px;
+  height: 400px;
+  margin-left: 5px;
+}
+.mange-scoll a .lower-classs img{
+  width: 250px;
+  height: 250px;
+}
+
+.mange-scoll a .lower-classs :hover
+{
+  transform: scale(1.1); 
+}
